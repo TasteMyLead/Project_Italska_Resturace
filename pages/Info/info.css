@@ -1,0 +1,62 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.pole{
+    display: flex;
+    justify-content: center;
+}
+
+.textovePole{
+    width: 85vh;
+    height: 100vh;
+
+    border-radius: 5px;
+
+    background-color: rgb(196, 31, 40, 0.6);
+    border: 3px black solid;
+    box-shadow:10px 10px 6px 0  rgba(0, 0, 0, 0.307);
+    
+    
+}
+.textovePole div{
+    display: flex;
+    margin: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+
+}
+
+.textovePole div p{
+    background-color:   rgba(182, 91, 95, 0.908);
+    border-radius:20px;
+    padding: 1%;
+    border: black 1px solid;
+    box-shadow: 2px 2px 2px black;
+}
+
+.textovePole div:nth-child(odd){
+    justify-content: left;
+}
+
+.textovePole div:nth-child(even){
+    justify-content: right;
+}
+
+
+.textovePole p {
+    text-align: center;
+}

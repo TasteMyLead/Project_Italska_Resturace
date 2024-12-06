@@ -1,0 +1,180 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#background-img{
+background-image: url("../../images/Background_Image_Blur.jpg");
+ width: 100%;
+ height: 100vh;
+
+ background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: blur(4px);
+}
+
+#backgournd-shadow{
+    background-color: rgb(14, 14, 14);
+    height: 100%;
+    width: 100%;
+
+}
+
+#background-txt{
+    position: absolute;
+    top: 52.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 40%;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    border: 5px solid rgba(186, 29, 29, 0.523);
+    box-shadow:  8px 10px 10px rgba(255, 255, 255, 0.7);
+
+
+    border-radius: 4px;
+    background-color: rgba(7, 1, 1, 0.162);
+}
+
+
+#oteviraciDoba {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 10vw;
+}
+
+#oteviraciDoba > div{
+    width: 50%;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+#oteviraciDoba div{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+#oteviraciDoba div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mapa{
+    width: 100%;
+}
+#mapa div{
+    border: 2px solid black;
+    width: 80%;
+    height: 50vh;
+    box-shadow: 5px 5px 3px;
+}
+
+#mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#oteviraciDoba table{
+    background-color:rgb(232, 71, 79) ;
+    border: 2px solid black;
+    width: 80%;
+    height: 50vh;
+    box-shadow: 5px 5px 3px;
+}
+
+
+#oteviraciDoba table tr{
+    height: 1vw;
+    border-bottom: 1px black solid;
+    
+}
+
+#oteviraciDoba tr:nth-child(odd){
+    background-color:rgb(199, 19, 28) ;
+}
+
+#oteviraciDoba td{
+    width: 50%;
+    font-size: 2vw;
+}
+
+#oteviraciDoba tr td:first-child{
+    padding-left: 1%;
+}
+#oteviraciDoba tr td:last-child{
+    text-align: center;
+}
+
+
+
+
+#zoomingPictures{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position:relative;
+}
+
+.zoom{
+    transition-duration: 1s;
+}
+
+#rightCircleArrow:hover{
+    transform: scale(1.1);
+}
+
+
+.zoomingPicture{
+    width: 33vw;
+    flex:1;
+
+    display: flex;
+    align-items: center;
+}
+
+.zoomingPicture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#movingPictures:first-child, #movingPictures:first-child img{
+    width: 0px;
+    flex:0;
+    height: 0x;
+}
+
+
+#movingPictures > div:hover{
+    transition-duration: 1s;
+}
+
+#movingPictures div img{
+    width: 100%;
+}
+
+.zoom{
+
+    transition-delay: 2s;
+}
+
+
+
